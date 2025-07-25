@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .max-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .styledRadius {
+        border-radius: 50px 50px 25px 25px;
+    }
+
+
+
+}
