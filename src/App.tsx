@@ -12,6 +12,7 @@ function App() {
       </div>
       <div className="max-container mt-5">
         <Routes>
+          <Route path="*" element={<Alim />} />
           <Route path="/munir" element={<Munir />} />
           <Route path="/alim" element={<Alim />} />
           <Route path="/muslum" element={<Muslum />} />

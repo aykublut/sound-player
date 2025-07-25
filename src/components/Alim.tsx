@@ -4,12 +4,16 @@ import tracea from "../images/tracea.png";
 import haluk from "../images/haluk.png";
 import qasimovs from "../images/qasimovs.png";
 import erdogan from "../images/tayyip.png";
+import Bayati from "/Bayati.mp3";
+import grace from "/grace.mp3";
+import erdoganmusic from "/erdogan.mp3";
+import bilginermusic from "/bilginer.mp3";
 
 const Alim = () => {
   const [Image, setImage] = useState(qasimov);
 
   return (
-    <div className="flex flex-col sm:flex-row w-full h-full h-[35rem]  ">
+    <div className="flex flex-col sm:flex-row w-full h-full   ">
       <div
         className="w-[100%] sm:w-[50%] h-[35rem] bg-gradient-to-r from-black via-red-700  "
         style={{ borderRadius: "470px 0px 0px 30px" }}
@@ -29,7 +33,7 @@ const Alim = () => {
               }}
               controls
             >
-              <source src="/public/grace.mp3" type="audio/mpeg" />
+              <source src={grace} type="audio/mpeg" />
               Tarayıcınız audio etiketini desteklemiyor.
             </audio>
           </div>
@@ -38,7 +42,7 @@ const Alim = () => {
           <div className="flex flex-col justify-center items-center gap-2 bg-gradient-to-r from-slate-700 via-red-800 to-black styledRadius">
             <h1>Bayati Şiraz</h1>
             <audio id="audioq2" onPlay={() => setImage(qasimovs)} controls>
-              <source src="/public/Bayati.mp3" type="audio/mpeg" />
+              <source src={Bayati} type="audio/mpeg" />
               Tarayıcınız audio etiketini desteklemiyor.
             </audio>
           </div>
@@ -47,7 +51,7 @@ const Alim = () => {
           <div className="flex flex-col justify-center items-center gap-2 bg-gradient-to-r from-slate-700 via-red-800 to-black styledRadius">
             <h1>?!?!?!?!?</h1>
             <audio id="audioq3" onPlay={() => setImage(haluk)} controls>
-              <source src="/public/bilginer.mp3" type="audio/mpeg" />
+              <source src={bilginermusic} type="audio/mpeg" />
               Tarayıcınız audio etiketini desteklemiyor.
             </audio>
           </div>
@@ -56,7 +60,7 @@ const Alim = () => {
           <div className="flex flex-col justify-center items-center gap-2 bg-gradient-to-r from-slate-700 via-red-800 to-black styledRadius">
             <h1>ALLAHIM NOLUYOOR!!??</h1>
             <audio id="audioq3" onPlay={() => setImage(erdogan)} controls>
-              <source src="/public/erdogan.mp3" type="audio/mpeg" />
+              <source src={erdoganmusic} type="audio/mpeg" />
               Tarayıcınız audio etiketini desteklemiyor.
             </audio>
           </div>
