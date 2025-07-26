@@ -2,6 +2,7 @@ import Alim from "./components/Alim";
 import Munir from "./components/Munir";
 import Muslum from "./components/Muslum";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
           <Route path="/alim" element={<Alim />} />
           <Route path="/muslum" element={<Muslum />} />
         </Routes>
+      </div>
+
+      <div className="max-container mt-10">
+        <Footer />
       </div>
     </div>
   );
