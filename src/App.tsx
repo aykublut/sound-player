@@ -2,7 +2,7 @@ import Alim from "./components/Alim";
 import Munir from "./components/Munir";
 import Muslum from "./components/Muslum";
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
 function App() {

@@ -1,6 +1,6 @@
 import aykut from "../images/aykut.jpg";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="w-full py-6 bg-gradient-to-r from-gray-900 via-red-900 to-black text-white text-center rounded-sm flex justify-center items-center gap-1   ">
       <a
@@ -22,4 +22,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
