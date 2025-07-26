@@ -16,8 +16,8 @@ const Alim = () => {
       </div>
       <div className="w-[100%] sm:w-[50%] h-[35rem] flex flex-col items-center gap-5">
         <h1
-          className={`text-5xl text-white italic ${
-            sarkici === "ALİM QASİMOV & FERGANE QASİMOVA"
+          className={` text-white italic ${
+            sarkici == "ALİM QASİMOV & FERGANE QASİMOVA"
               ? "text-3xl"
               : "text-5xl"
           }`}
