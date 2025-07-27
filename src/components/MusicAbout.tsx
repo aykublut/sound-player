@@ -1,17 +1,16 @@
-import { setPlayingMusic } from "../redux/musicSlice";
+import { useEffect } from "react";
+
 import type { RootState } from "../redux/store";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const MusicAbout = () => {
   const { thatMusic } = useSelector((store: RootState) => store.music);
   const { content, photo, source, soyleyen } = thatMusic;
 
-  const dispatch = useDispatch();
-  dispatch(setPlayingMusic(content));
-  const title = document.querySelector("#title") as HTMLTitleElement;
-  const { playingMusic } = useSelector((store: RootState) => store.music);
-
-  title.textContent = `${playingMusic} şarkısı çalınıyor...`;
+  useEffect(() => {
+    const title = document.querySelector("#title") as HTMLTitleElement;
+    title.textContent = `${content} şarkısı çalınıyor...`;
+  }, []);
 
   return (
     <div className="flex  w-full h-full   ">
@@ -27,8 +26,8 @@ const MusicAbout = () => {
             <h1
               className={
                 soyleyen == "ALİM QASİMOV & FERGANE QASİMOVA"
-                  ? "text-3xl"
-                  : "text-5xl"
+                  ? "text-3xl text-center"
+                  : "text-5xl text-center"
               }
             >
               {soyleyen}

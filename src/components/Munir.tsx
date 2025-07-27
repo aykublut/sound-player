@@ -2,6 +2,8 @@ import { tracksMunir } from "../tracks/Tracks";
 import Music from "./Music";
 
 const Munir = () => {
+  const title = document.querySelector("#title") as HTMLTitleElement;
+  title.textContent = "Yerli Spotify";
   return (
     <div className="pl-[3.5rem] sm:pl-0">
       <div
@@ -9,7 +11,7 @@ const Munir = () => {
       gap-5  sm:p-2"
       >
         {tracksMunir.map((track) => (
-          <Music track={track} />
+          <Music track={track} key={track.content} />
         ))}
       </div>
     </div>

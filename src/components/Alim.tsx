@@ -11,7 +11,7 @@ const Alim = () => {
       gap-5  sm:p-2"
       >
         {tracksAlim.map((track) => (
-          <Music track={track} />
+          <Music track={track} key={track.content} />
         ))}
       </div>
     </div>

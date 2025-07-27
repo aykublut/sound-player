@@ -11,7 +11,7 @@ const Aykut = () => {
       gap-5  sm:p-2"
       >
         {tracksAdmin.map((track) => (
-          <Music track={track} />
+          <Music track={track} key={track.content} />
         ))}
       </div>
     </div>

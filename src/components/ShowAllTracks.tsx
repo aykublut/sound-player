@@ -11,7 +11,7 @@ const ShowAllTracks = () => {
       gap-5  sm:p-2"
       >
         {allTracks.map((track) => (
-          <Music track={track} />
+          <Music track={track} key={track.content} />
         ))}
       </div>
     </div>

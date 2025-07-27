@@ -9,9 +9,9 @@ import { useNavigate } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 const Navbar = () => {
   const images = [
-    { img: alim, navigate: "/alim" },
-    { img: munir, navigate: "/munir" },
-    { img: muslum, navigate: "/muslum" },
+    { img: alim, navigate: "/alim", id: "1" },
+    { img: munir, navigate: "/munir", id: "2" },
+    { img: muslum, navigate: "/muslum", id: "3" },
   ];
   const navigate = useNavigate();
   const [clicked, setClicked] = useState<boolean>(false);
@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <header className="py-3 px-6 relative bg-gradient-to-r from-[#2A2A2A] via-[#3A2A2A] to-[#2A2A2A] text-white shadow-md shadow-black/30 backdrop-blur-sm">
       <nav className="flex justify-between  items-center ">
-        <div className="md:w-[219px] w-[100px] pl-5">
+        <div className="md:w-[219px] w-[100px] pl-2 sm:pl-5">
           <a onClick={() => turkMuzikleriAmblemFonksiyon()}>
             <img
               className="rounded-full w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] cursor-pointer"
@@ -47,7 +47,7 @@ const Navbar = () => {
             />
           </a>
         </div>
-        <h4 className=" text-base relative flex justify-center items-center sm:text-2xl md:text-[1.3rem] lg:text-4xl text font-playfair italic">
+        <h4 className=" text-base relative flex text-center justify-center items-center sm:text-2xl md:text-[1.3rem] lg:text-4xl  font-playfair italic">
           {changedTitle
             ? "Aykut'un Müzik Derlemeleri"
             : "Türk Dünyasından Müzik Enleri"}
@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className={changedTitle ? "hidden" : "block"}>
           <ul className=" gap-3 hidden md:flex z-10 ">
             {images.map((image) => (
-              <li className="">
+              <li key={image.id} className="">
                 <a
                   className="cursor-pointer"
                   onClick={() => navigate(`${image.navigate}`)}
@@ -90,7 +90,7 @@ const Navbar = () => {
             {
               <ul className=" gap-1   grid grid-cols-3 grid-rows-1 ">
                 {images.map((image) => (
-                  <li>
+                  <li key={image.id}>
                     <a
                       className="cursor-pointer"
                       onClick={() => navigate(`${image.navigate}`)}
