@@ -7,6 +7,9 @@ import { FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { useDispatch, useSelector } from "react-redux";
+import type { RootState } from "../redux/store";
+import { setChangedTitle } from "../redux/musicSlice";
 const Navbar = () => {
   const images = [
     { img: alim, navigate: "/alim", id: "1" },
@@ -15,8 +18,12 @@ const Navbar = () => {
   ];
   const navigate = useNavigate();
   const [clicked, setClicked] = useState<boolean>(false);
-  const [changedTitle, setChangedTitle] = useState<boolean>(false);
+  const { changedTitle } = useSelector((store: RootState) => store.music);
   const [icon, setIcon] = useState(amblem);
+  const dispatch = useDispatch();
+  const setChangedTitleFunc = () => {
+    dispatch(setChangedTitle(!changedTitle));
+  };
 
   useEffect(() => {
     if (changedTitle) {
@@ -52,7 +59,7 @@ const Navbar = () => {
             ? "Aykut'un Müzik Derlemeleri"
             : "Türk Dünyasından Müzik Enleri"}
           <IoMdArrowDropdown
-            onClick={() => setChangedTitle(!changedTitle)}
+            onClick={() => setChangedTitleFunc()}
             className="absolute top-10 cursor-pointer"
           />
         </h4>
@@ -79,7 +86,9 @@ const Navbar = () => {
           onClick={() => setClicked(!clicked)}
           className=" w-[100px] flex justify-center items-center  md:hidden"
         >
-          {<FaBars className="text-6xl cursor-pointer " />}
+          <FaBars
+            className={changedTitle ? "hidden" : "text-6xl cursor-pointer "}
+          />
           <div
             className={
               clicked

@@ -9,10 +9,12 @@ interface thatMusicType {
 
 export interface CounterState {
   thatMusic: thatMusicType;
+  changedTitle: boolean;
 }
 
 const initialState: CounterState = {
   thatMusic: { content: "", photo: "", source: "", soyleyen: "" },
+  changedTitle: false,
 };
 
 export const musicSlice = createSlice({
@@ -23,9 +25,12 @@ export const musicSlice = createSlice({
     toAbout: (state, action) => {
       state.thatMusic = action.payload;
     },
+    setChangedTitle: (state, action) => {
+      state.changedTitle = action.payload;
+    },
   },
 });
 
-export const { toAbout } = musicSlice.actions;
+export const { toAbout, setChangedTitle } = musicSlice.actions;
 
 export default musicSlice.reducer;

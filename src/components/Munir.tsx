@@ -1,9 +1,16 @@
+import { useEffect } from "react";
 import { tracksMunir } from "../tracks/Tracks";
 import Music from "./Music";
+import { useDispatch } from "react-redux";
+import { setChangedTitle } from "../redux/musicSlice";
 
 const Munir = () => {
   const title = document.querySelector("#title") as HTMLTitleElement;
   title.textContent = "Yerli Spotify";
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setChangedTitle(false));
+  }, []);
   return (
     <div className="pl-[3.5rem] sm:pl-0">
       <div
