@@ -14,18 +14,18 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [clicked, setClicked] = useState<boolean>(false);
   return (
-    <header className="py-2 px-5 bg-gradient-to-r from-black via-red-700 to-black text-white shadow-md shadow-gray-500">
+    <header className="py-3 px-6 bg-gradient-to-r from-[#2A2A2A] via-[#3A2A2A] to-[#2A2A2A] text-white shadow-md shadow-black/30 backdrop-blur-sm">
       <nav className="flex justify-between  items-center ">
         <div className="md:w-[219px] w-[100px] pl-5">
-          <a href="#">
+          <a onClick={() => navigate("/")}>
             <img
-              className="rounded-full w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]"
+              className="rounded-full w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] cursor-pointer"
               src={amblem}
               alt=""
             />
           </a>
         </div>
-        <h4 className=" text-1xl sm:text-2xl lg:text-4xl text font-playfair italic">
+        <h4 className=" text-base sm:text-2xl md:text-[1.3rem] lg:text-4xl text font-playfair italic">
           Türk Dünyasından Müzik Enleri
         </h4>
         <ul className=" gap-3 hidden md:flex z-10 ">

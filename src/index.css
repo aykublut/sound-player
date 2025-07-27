@@ -12,6 +12,15 @@
         border-radius: 50px 50px 25px 25px;
     }
 
+    .musicCard {
+        @apply bg-gradient-to-r from-[#2A2A2A]/70 via-[#3A2A2A]/50 to-[#2A2A2A]/70 rounded-b-xl
+    }
+
+    .musicCardContent {
+        @apply bg-gradient-to-r from-[#121212]/95 via-[#1E1E1E]/90 to-[#121212]/95 rounded-t-xl;
+    }
+
+
 
 
 }
