@@ -31,7 +31,7 @@ const MusicAbout = () => {
       </div>
       <div className="w-[100%] max-md:absolute left-0 md:w-[50%]   h-[35rem]  gap-5">
         <div className="w-full h-full -z-5 flex flex-col pt-5 justify-between items-center gap-2 md:playerDiv text-white rounded-e-[2rem] ">
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <h1
               className={
                 soyleyen == "ALİM QASİMOV & FERGANE QASİMOVA"

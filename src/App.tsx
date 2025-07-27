@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 
 import MusicAbout from "./components/MusicAbout";
 import ShowAllTracks from "./components/ShowAllTracks";
+import Aykut from "./components/Aykut";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
       <div className=" mt-5">
         <Routes>
+          <Route path="/adminMusic" element={<Aykut />} />
           <Route path="/" element={<ShowAllTracks />} />
           <Route path="*" element={<ShowAllTracks />} />
           <Route path="/munir" element={<Munir />} />

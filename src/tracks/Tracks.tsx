@@ -23,6 +23,18 @@ import hatirlaMaziyi from "/hatirlaMaziyi.mp3";
 import kalamis from "/kalamis.mp3";
 import rindlerinOlumu from "/rindlerinOlumu.mp3";
 import korKuyular from "/korKuyular.mp3";
+
+import snake from "/snakePitPoetry.mp3";
+import bjorn from "../images/viking.png";
+
+import kingdom from "../images/blood.png";
+import bwp from "/bwp.mp3";
+
+import gra from "/gra.mp3";
+import einar from "../images/einar.png";
+
+import yeniceri from "../images/yeniceri.png";
+import yenicerisong from "/yenicerisong.mp3";
 export const allTracks = [
   {
     content: "A Trace of Grace",
@@ -168,6 +180,39 @@ export const tracksMunir = [
     photo: munir,
     source: korKuyular,
     soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Hatırla Maziyi",
+    photo: munir,
+    source: hatirlaMaziyi,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
+];
+export const tracksAdmin = [
+  {
+    content: "Snake Pit Pottery",
+    photo: bjorn,
+    source: snake,
+    soyleyen: "Einar Selvik",
+  },
+  {
+    content: "Blood Will Prevail",
+    photo: kingdom,
+    source: bwp,
+    soyleyen: "John Lunn & Eivor",
+  },
+
+  {
+    content: "Grá",
+    photo: einar,
+    source: gra,
+    soyleyen: "Wardruna",
+  },
+  {
+    content: "Yeniçeri - Ben Kimim?",
+    photo: yeniceri,
+    source: yenicerisong,
+    soyleyen: "Farya Faraji",
   },
   {
     content: "Hatırla Maziyi",

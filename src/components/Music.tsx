@@ -25,7 +25,7 @@ const Music: React.FC<MusicProps> = ({ track }) => {
   return (
     <div
       style={{ backgroundImage: `url(${photo})` }}
-      className="w-[11.4rem] h-[11rem] rounded-xl  bg-cover bg-center"
+      className="sm:w-[11.4rem] sm:h-[11rem] w-[7.5rem] h-[10rem] rounded-xl  bg-cover bg-center"
     >
       <div className="w-[100%] h-[30%] flex justify-center items-center musicCardContent text-white">
         {content}
