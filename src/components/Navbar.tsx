@@ -14,7 +14,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [clicked, setClicked] = useState<boolean>(false);
   return (
-    <header className="py-3 px-6 bg-gradient-to-r from-[#2A2A2A] via-[#3A2A2A] to-[#2A2A2A] text-white shadow-md shadow-black/30 backdrop-blur-sm">
+    <header className="py-3 px-6 relative bg-gradient-to-r from-[#2A2A2A] via-[#3A2A2A] to-[#2A2A2A] text-white shadow-md shadow-black/30 backdrop-blur-sm">
       <nav className="flex justify-between  items-center ">
         <div className="md:w-[219px] w-[100px] pl-5">
           <a onClick={() => navigate("/")}>
@@ -46,17 +46,17 @@ const Navbar = () => {
         </ul>
         <div
           onClick={() => setClicked(!clicked)}
-          className="relative w-[100px] flex justify-center items-center  md:hidden"
+          className=" w-[100px] flex justify-center items-center  md:hidden"
         >
           {<FaBars className="text-6xl cursor-pointer " />}
           <div
             className={
               clicked
-                ? "absolute top-[4rem] bg-red-900 rounded-xl p-2 w-[8rem]"
+                ? " absolute top-[6rem] bg-red-900 rounded-xl p-2 w-[8rem]"
                 : "hidden"
             }
           >
-            <ul className=" gap-1  grid grid-cols-2 grid-rows-2 ">
+            <ul className=" gap-1   grid grid-cols-2 grid-rows-2 ">
               {images.map((image) => (
                 <li>
                   <a

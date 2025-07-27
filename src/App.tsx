@@ -4,19 +4,19 @@ import Muslum from "./components/Muslum";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
-import Music from "./components/Music";
+
 import MusicAbout from "./components/MusicAbout";
 import ShowAllTracks from "./components/ShowAllTracks";
 
 function App() {
   return (
-    <div className=" min-h-screen bg-gradient-to-b from-neutral-900 via-zinc-800 to-neutral-700">
-      <div className="max-container">
+    <div className=" min-h-screen max-container bg-gradient-to-l from-[#2A2A2A] via-[#2a2929] to-[#250b0b2f]">
+      <div className="">
         <Navbar />
       </div>
       <div></div>
 
-      <div className="max-container mt-5">
+      <div className=" mt-5">
         <Routes>
           <Route path="/" element={<ShowAllTracks />} />
           <Route path="*" element={<ShowAllTracks />} />
@@ -27,7 +27,7 @@ function App() {
         </Routes>
       </div>
 
-      <div className="max-container mt-10">
+      <div className=" mt-6">
         <Footer />
       </div>
     </div>

@@ -17,6 +17,12 @@ import niluferMuslum from "../images/niluferphoto.png";
 import sigaraMuslum from "../images/sigara.png";
 import itirazMuslum from "../images/itiraz.png";
 
+import munir from "../images/hatirlaMaziyi.png";
+
+import hatirlaMaziyi from "/hatirlaMaziyi.mp3";
+import kalamis from "/kalamis.mp3";
+import rindlerinOlumu from "/rindlerinOlumu.mp3";
+import korKuyular from "/korKuyular.mp3";
 export const allTracks = [
   {
     content: "A Trace of Grace",
@@ -65,6 +71,30 @@ export const allTracks = [
     photo: aliAbi,
     source: affetmusic,
     soyleyen: "Müslüm Gürses",
+  },
+  {
+    content: "Kalamis",
+    photo: munir,
+    source: kalamis,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Rindlerin Ölümü",
+    photo: munir,
+    source: rindlerinOlumu,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Kör Kuyular",
+    photo: munir,
+    source: korKuyular,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Hatırla Maziyi",
+    photo: munir,
+    source: hatirlaMaziyi,
+    soyleyen: "Munir Nurettin Selçuk",
   },
 ];
 
@@ -118,5 +148,31 @@ export const tracksMuslum = [
     photo: aliAbi,
     source: affetmusic,
     soyleyen: "Müslüm Gürses",
+  },
+];
+export const tracksMunir = [
+  {
+    content: "Kalamis",
+    photo: munir,
+    source: kalamis,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Rindlerin Ölümü",
+    photo: munir,
+    source: rindlerinOlumu,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Kör Kuyular",
+    photo: munir,
+    source: korKuyular,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Hatırla Maziyi",
+    photo: munir,
+    source: hatirlaMaziyi,
+    soyleyen: "Munir Nurettin Selçuk",
   },
 ];

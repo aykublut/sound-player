@@ -2,7 +2,7 @@ import aykut from "../images/aykut.jpg";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-6 bg-gradient-to-r from-gray-900 via-red-900 to-black text-white text-center rounded-sm flex justify-center items-center gap-1   ">
+    <footer className="w-full py-6 bg-gradient-to-l from-[#2A2A2A] via-[#3A2A2A] to-[#2A2A2A] text-white text-center rounded-sm flex justify-center items-center gap-1 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.3)]  ">
       <a
         className="cursor-pointer"
         href="https://github.com/aykublut/sound-player"
