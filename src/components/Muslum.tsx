@@ -3,6 +3,8 @@ import { tracksMuslum } from "../tracks/Tracks";
 import Music from "./Music";
 
 const Muslum = () => {
+  const title = document.querySelector("#title") as HTMLTitleElement;
+  title.textContent = "Yerli Spotify";
   return (
     <div className="pl-[3.5rem] sm:pl-0">
       <div

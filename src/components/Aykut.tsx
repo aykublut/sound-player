@@ -2,6 +2,8 @@ import Music from "./Music";
 import { tracksAdmin } from "../tracks/Tracks";
 
 const Aykut = () => {
+  const title = document.querySelector("#title") as HTMLTitleElement;
+  title.textContent = "Yerli Spotify";
   return (
     <div className="pl-[3.5rem] sm:pl-0">
       <div
