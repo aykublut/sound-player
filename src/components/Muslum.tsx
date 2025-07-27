@@ -1,11 +1,8 @@
-import { useState } from "react";
 import { tracksMuslum } from "../tracks/Tracks";
 
 import Music from "./Music";
 
 const Muslum = () => {
-  const [sarkici, setSarkici] = useState("ALİM QASİMOV");
-
   return (
     <div className="flex flex-col sm:flex-row w-full h-full pl-[3.5rem] sm:pl-0  ">
       {/* <div

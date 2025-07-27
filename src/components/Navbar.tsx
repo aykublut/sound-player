@@ -52,11 +52,11 @@ const Navbar = () => {
           <div
             className={
               clicked
-                ? " absolute top-[6rem] bg-red-900 rounded-xl p-2 w-[8rem]"
+                ? "z-10 absolute top-[4.5rem] bg-red-900 rounded-xl p-2 w-[8rem]"
                 : "hidden"
             }
           >
-            <ul className=" gap-1   grid grid-cols-2 grid-rows-2 ">
+            <ul className=" gap-1   grid grid-cols-3 grid-rows-1 ">
               {images.map((image) => (
                 <li>
                   <a
@@ -64,7 +64,7 @@ const Navbar = () => {
                     onClick={() => navigate(`${image.navigate}`)}
                   >
                     <img
-                      className="w-[65px] h-[65px] rounded-full p-[2px] bg-red-950 border-white border"
+                      className="w-[35px] h-[35px] rounded-full p-[2px] bg-red-950 border-white border"
                       src={image.img}
                       alt=""
                     />
