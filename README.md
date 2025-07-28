@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+Yerli Spotify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Türk dünyasından seçilmiş müzikleri çalmak için geliştirilmiş, modern ve kullanıcı dostu bir müzik çalar uygulaması.
 
-Currently, two official plugins are available:
+Proje Hakkında
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Yerli Spotify, React ve TypeScript ile geliştirilmiş, responsive bir müzik çalar uygulamasıdır. Kullanıcılar, farklı kategorilerdeki şarkıları görüntüleyebilir, seçtikleri şarkıyı oynatabilir ve mobil/masaüstü cihazlarda sorunsuz bir deneyim yaşayabilir. Proje, modern frontend teknolojileriyle yazıldı ve hata ayıklama süreçlerinde önemli deneyimler kazandırdı.
 
-## Expanding the ESLint configuration
+Özellikler
+Şarkı Listeleri: Alim Qasimov, Münir Özkul, Müslüm Gürses gibi kategorilerde şarkılar.
+Ses Oynatma: Tarayıcı <audio> etiketiyle otomatik oynatma ve kontrol desteği.
+Responsive Tasarım: Tailwind CSS ile mobil ve masaüstü uyumlu arayüz.
+Navigasyon: react-router-dom ile anasayfa, şarkı detayları ve kategori sayfaları arasında geçiş.
+State Yönetimi: @reduxjs/toolkit ile dinamik başlık ve şarkı seçimi yönetimi.
+Ikonlar: react-icons ile kullanıcı dostu ikonlar.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Kullanılan Teknolojiler
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+React: Kullanıcı arayüzü için.
+TypeScript: Temel tip güvenliği ve hata önleme.
+Tailwind CSS: Responsive ve modern stil için.
+react-router-dom: Sayfa navigasyonu için.
+@reduxjs/toolkit: State yönetimi için.
+react-icons: Ikon entegrasyonu.
+Vite: Hızlı geliştirme ve build aracı.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Kurulum
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Projenizi yerel ortamda çalıştırmak için aşağıdaki adımları izleyin:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+git clone https://github.com/aykublut/sound-player.git
+cd sound-player
+npm install
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Ardından, tarayıcınızda http://localhost:5173 adresine gidin.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Kullanım
+Ana Sayfa: Türk dünyasından şarkı kartlarını görüntüleyin.
+Şarkı Kartları: Bir şarkıya tıklayarak detay sayfasına gidin ve şarkıyı oynatın.
+Kategoriler: /alim, /munir, /muslum yollarıyla farklı şarkı listelerine erişin.
+Admin Modu: Başlıkta bulunan ikona tıklayarak admin müzik listesine geçiş yapın.
+
+Ekran Görüntüleri
+
+(Ekran görüntüleri eklenecek. Örneğin, Vercel/Netlify deploy sonrası buraya link ekleyin.)
+
+Zorluklar ve Öğrenilenler
+
+Zorluklar: Responsive tasarım (Tailwind ile mobil uyumluluk) ve fonksiyonel hatalar (Redux state yönetimi, router sorunları) en çok zaman alan kısımlardı. Hataları çözmek için yoğun debug süreçleri gerekti.
+Öğrenilenler: React hook’ları, Redux Toolkit, Tailwind CSS ve TypeScript’in hata yakalama özellikleri konusunda deneyim kazandım. Hata ayıklama becerilerim ciddi şekilde gelişti.
+
+Gelecek Planlar
+Unit testler eklemek (Jest/Vitest ile).
+Backend entegrasyonu (örneğin, şarkı listesini bir API’den çekme).
+Ses oynatma için gelişmiş özellikler (örneğin, dalga formu görselleştirme).
+Kod tekrarı azaltmak için reusable komponentler oluşturma.
+
+
+Katkıda bulunmak isterseniz:
+
+Depoyu fork edin.
+Yeni bir branch oluşturun: git checkout -b feature/yeni-ozellik.
+Değişikliklerinizi yapın ve commit edin: git commit -m "Yeni özellik eklendi".
+Branch’i push edin: git push origin feature/yeni-ozellik.
+
+
+Pull request açın.
+
+İletişim
+GitHub: aykublut
+Proje Linki: https://aykublut.github.io/sound-player/
