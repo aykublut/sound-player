@@ -35,6 +35,12 @@ import einar from "../images/einar.png";
 
 import yeniceri from "../images/yeniceri.png";
 import yenicerisong from "/yenicerisong.mp3";
+
+import bob from "../images/bob.png";
+import mastersOfWar from "/mastersofWar.mp3";
+
+import cari from "../images/caricari.png";
+import mazuka from "/Mazuka.mp3";
 export const allTracks = [
   {
     content: "A Trace of Grace",
@@ -219,5 +225,17 @@ export const tracksAdmin = [
     photo: munir,
     source: hatirlaMaziyi,
     soyleyen: "Munir Nurettin Selçuk",
+  },
+  {
+    content: "Masters of War",
+    photo: bob,
+    source: mastersOfWar,
+    soyleyen: "Bob Dylan",
+  },
+  {
+    content: "Mazuka",
+    photo: cari,
+    source: mazuka,
+    soyleyen: "Cari Cari",
   },
 ];

@@ -60,7 +60,7 @@ const Navbar = () => {
             : "Türk Dünyasından Müzik Enleri"}
           <IoMdArrowDropdown
             onClick={() => setChangedTitleFunc()}
-            className="absolute top-10 cursor-pointer"
+            className="absolute top-8 md:top-10 text-4xl cursor-pointer"
           />
         </h4>
         <div className={changedTitle ? "hidden" : "block"}>

@@ -35,8 +35,8 @@ const MusicAbout = () => {
             <h2 className="text-4xl italic text-white/80">{content}</h2>
           </div>
 
-          <audio autoPlay className="w-[95%] " controls>
-            <source src={source} type="audio/mpeg" />
+          <audio autoPlay className="w-[95%]  " controls>
+            <source src={source} type="audio/mp3" />
             Tarayıcınız audio etiketini desteklemiyor.
           </audio>
         </div>
