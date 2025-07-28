@@ -29,8 +29,11 @@ Kurulum
 Projenizi yerel ortamda çalıştırmak için aşağıdaki adımları izleyin:
 
 git clone https://github.com/aykublut/sound-player.git
-cd sound-player
+
+cd sound-player /proje ismini "tailwind" olarak bırakmış olabilirim dikkatli olunuz. cd tailwind 
+
 npm install
+
 npm run dev
 
 Ardından, tarayıcınızda http://localhost:5173 adresine gidin.
