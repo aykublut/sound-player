@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store.tsx";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/sound-player/">
     <StrictMode>
       <Provider store={store}>
         <App />
