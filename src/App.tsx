@@ -3,20 +3,13 @@ import Munir from "./components/Munir";
 import Muslum from "./components/Muslum";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import MusicAbout from "./components/MusicAbout";
 import ShowAllTracks from "./components/ShowAllTracks";
 import Aykut from "./components/Aykut";
-import { useEffect } from "react";
 
 function App() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    console.log("Uygulama açıldığında sadece bir kere çalışır");
-
-    navigate("/");
-  }, []);
   return (
     <div className=" min-h-screen max-container bg-gradient-to-l from-[#2A2A2A] via-[#2a2929] to-[#250b0b2f]">
       <div className="">
