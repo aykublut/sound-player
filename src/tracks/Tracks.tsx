@@ -6,7 +6,7 @@ import Bayati from "/Bayati.mp3";
 import grace from "/grace.mp3";
 import vivantmusic from "/vivantmusic.mp3";
 import bilginermusic from "/bilginer.mp3";
-
+import hulya from "/hulya.mp3";
 import nilufermusic from "/Nilüfer.mp3";
 import itirazmusic from "/İtirazımVar.mp3";
 import sigaramusic from "/Sigara.mp3";
@@ -114,6 +114,12 @@ export const allTracks = [
     source: hatirlaMaziyi,
     soyleyen: "Munir Nurettin Selçuk",
   },
+  {
+    content: "Bu Hülyalar Diyarında",
+    photo: munir,
+    source: hulya,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
 ];
 
 export const tracksAlim = [
@@ -193,6 +199,12 @@ export const tracksMunir = [
     source: hatirlaMaziyi,
     soyleyen: "Munir Nurettin Selçuk",
   },
+  {
+    content: "Bu Hülyalar Diyarında",
+    photo: munir,
+    source: hulya,
+    soyleyen: "Munir Nurettin Selçuk",
+  },
 ];
 export const tracksAdmin = [
   {
@@ -219,6 +231,12 @@ export const tracksAdmin = [
     photo: yeniceri,
     source: yenicerisong,
     soyleyen: "Farya Faraji",
+  },
+  {
+    content: "Bu Hülyalar Diyarında / Aykut'un Favorisi",
+    photo: munir,
+    source: hulya,
+    soyleyen: "Munir Nurettin Selçuk",
   },
   {
     content: "Hatırla Maziyi",
