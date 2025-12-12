@@ -6,7 +6,7 @@ import Bayati from "/Bayati.mp3";
 import grace from "/grace.mp3";
 import vivantmusic from "/vivantmusic.mp3";
 import bilginermusic from "/bilginer.mp3";
-import munirHulya from "/../images/munirHulya.png";
+import munirHulya from "../images/munirHulya.png";
 import hulya from "/hulya.mp3";
 import nilufermusic from "/Nilüfer.mp3";
 import itirazmusic from "/İtirazımVar.mp3";
